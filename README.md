@@ -1,6 +1,6 @@
-# A/B Testing: The Email That's Worth $58–92M a Year
+# Email A/B Test Analysis + Experiment Auditor
 
-**A real randomized experiment, analyzed end-to-end the way a decision worth millions deserves — plus a reusable Experiment Auditor that grades any A/B test and catches broken ones automatically.**
+End-to-end analysis of a real 64,000-customer randomized email experiment, plus a reusable **Experiment Auditor** CLI that grades any A/B test CSV for sample-ratio mismatch, covariate imbalance, power, and peeking.
 
 ---
 
@@ -18,8 +18,8 @@ A retailer randomly split 64,000 recent customers three ways: a men's merchandis
 
 - The men's email **more than doubles conversion** (+0.68pp, 95% CI +0.50 to +0.86, p = 1.5×10⁻¹³) and adds **+$0.77 revenue per send** (CI +$0.49 to +$1.06).
 - All six confirmatory tests survive Holm multiple-comparison correction; a 10,000-resample bootstrap reproduces the parametric intervals to the cent.
-- Scaled to a 10M-customer file with monthly sends: **$92M/year expected incremental revenue ($58M using the conservative CI bound)** against ~$120K of send costs.
 - The experiment itself passes every validity check: sample-ratio p = 0.90, all covariate imbalances 10× below threshold.
+- **Illustrative scale-up only (not realized revenue):** under stated assumptions (10M-customer file, monthly sends, ~$0.001/send), the CI implies roughly **$58–92M/year** incremental revenue versus ~$120K send cost. Replace assumptions with your own file size and frequency before using the projection.
 
 ![Conversion lift with confidence intervals](assets/conversion_lift_ci.png)
 
@@ -68,6 +68,7 @@ Full reports: [`assets/audit_hillstrom.txt`](assets/audit_hillstrom.txt), [`asse
 | [`code/experiment_design.py`](code/experiment_design.py) | Power / MDE / sample-size calculator (run it: `python code/experiment_design.py`) |
 | [`code/experiment_auditor.py`](code/experiment_auditor.py) | The auditor CLI |
 | [`code/utils.py`](code/utils.py) | Tests, CIs, bootstrap, Holm, SRM — implemented from scratch with derivation comments |
+| [`linkedin_post.md`](linkedin_post.md) | The non-technical communication artifact |
 
 ## Key concepts demonstrated
 

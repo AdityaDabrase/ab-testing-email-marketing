@@ -12,9 +12,9 @@ Sending the men's merchandise email caused purchases to more than double versus 
 
 ### "How much money is this worth?"
 
-At test scale, the men's email generated about **$16,400 of incremental revenue per 21,000 customers emailed**, at a send cost of roughly $21. Scaled to a 10-million-customer file with monthly campaigns, choosing the men's email over no email is worth roughly **$92M/year expected — and at least $58M/year even using the most conservative end of the confidence interval** — against annual send costs around $120K.
+**At test scale (measured):** the men's email generated about **$16,400 of incremental revenue per ~21,000 customers emailed**, at a send cost of roughly $21. Per-customer revenue lift is +$0.77 (95% CI +$0.49 to +$1.06).
 
-Detail: the per-customer revenue lift is +$0.77 (95% CI +$0.49 to +$1.06). We deliberately quote the CI's lower bound alongside the expectation so the projection can't be accused of cherry-picking. The scaling assumptions (file size, frequency, ~$0.001/send) are stated in the analysis notebook and can be replaced with our actual numbers in minutes.
+**Illustrative scale-up only (not realized revenue):** if you assume a 10-million-customer file, monthly campaigns, and ~$0.001/send, the same per-customer lift projects to roughly **$58–92M/year** incremental revenue versus ~$120K send cost (expectation vs CI lower bound). Those scale assumptions are in the analysis notebook and should be replaced with your actual file size and frequency before anyone treats the annual figure as a forecast.
 
 ### "Why should I believe the email *caused* this, and it's not just better customers in that group?"
 
@@ -90,5 +90,5 @@ Because intuition about what customers want has a documented failure rate near 5
 
 > We ran a randomized test on 64,000 customers: men's merchandise email vs. women's vs. no email.
 > The men's email **doubled purchase rate** (0.57% → 1.25%) and added **$0.77 revenue per send** — validated by five independent statistical checks.
-> Scaled to our file, this decision is worth **$58–92M/year** at ~$120K cost.
+> Under stated file-size/frequency assumptions, an illustrative annualization is ~$58–92M/year vs ~$120K send cost (not realized revenue).
 > **Recommendation: ship the men's email as default; test category-targeting next quarter.**
