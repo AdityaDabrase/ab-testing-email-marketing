@@ -68,7 +68,6 @@ Full reports: [`assets/audit_hillstrom.txt`](assets/audit_hillstrom.txt), [`asse
 | [`code/experiment_design.py`](code/experiment_design.py) | Power / MDE / sample-size calculator (run it: `python code/experiment_design.py`) |
 | [`code/experiment_auditor.py`](code/experiment_auditor.py) | The auditor CLI |
 | [`code/utils.py`](code/utils.py) | Tests, CIs, bootstrap, Holm, SRM — implemented from scratch with derivation comments |
-| [`linkedin_post.md`](linkedin_post.md) | The non-technical communication artifact |
 
 ## Key concepts demonstrated
 
