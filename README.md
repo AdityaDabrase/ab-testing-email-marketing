@@ -38,7 +38,7 @@ python code/experiment_auditor.py data/raw/hillstrom.csv \
 [2] COVARIATE BALANCE CHECK      ->  balanced  (worst |SMD| = 0.009, threshold 0.10)
 [3] POWER CHECK                  ->  MDE 0.22pp; observed lift 0.68pp -> power ~100%
 [4] PEEKING SIMULATION           ->  replay of p-values over time; stable signal
-[5] VERDICT                      ->  SHIP: Mens E-Mail, +0.681pp, p=1.5e-13
+[5] VERDICT                      ->  SHIP: Men's E-Mail, +0.681pp, p=1.5e-13
 ```
 
 Run it on a popular public ad-campaign dataset (588k users) and it **flags a Sample Ratio Mismatch automatically** — the observed 96/4 split is incompatible with an equal-allocation design, and the verdict flips to TEST INVALID until the true 96/4 design is supplied via `--expected-share`. A tool that catches a real design flaw in a real dataset in the wild:
@@ -92,3 +92,15 @@ python code/experiment_auditor.py data/raw/hillstrom.csv --group segment \
 - Test population is customers active in the last 12 months; extrapolation to lapsed customers needs its own test.
 - Segment-level findings are exploratory: the key interaction (men's email × past men's buyer) does not reach significance (p = 0.28), so targeting is a follow-up hypothesis, not a conclusion.
 - This is a canonical public dataset (Hillstrom 2008), chosen precisely because it is a *genuine* randomized experiment with published results to sanity-check against — the analysis, tooling, and communication layer are the original work here.
+
+## Stack
+
+Python · pandas · NumPy · SciPy · statsmodels · matplotlib · seaborn · Jupyter
+
+## License
+
+MIT — see [`LICENSE`](LICENSE). Datasets remain under their original public challenge / Kaggle terms; cite Kevin Hillstrom / MineThatData for Hillstrom.
+
+## Contact
+
+[LinkedIn](https://www.linkedin.com/in/adityadabrase/) · [dabrase.a@gmail.com](mailto:dabrase.a@gmail.com)
