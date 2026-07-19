@@ -72,7 +72,7 @@ Full reports: [`assets/audit_hillstrom.txt`](assets/audit_hillstrom.txt), [`asse
 
 ## Key concepts demonstrated
 
-Experiment design (hypotheses, power analysis, MDE, pre-registration discipline) · validity engineering (SRM, covariate balance via standardized mean differences, pre- vs post-treatment variables) · inference (two-proportion z-tests, Welch's t, bootstrap, confidence intervals) · multiple-comparison control (Holm) · peeking / early-stopping hazards · heterogeneous treatment effects and interaction tests · statistical vs practical significance · translating lift into revenue.
+Experiment design (hypotheses, power analysis, MDE) · validity engineering (SRM, covariate balance via standardized mean differences, pre- vs post-treatment variables) · inference (two-proportion z-tests, Welch's t, bootstrap, confidence intervals) · multiple-comparison control (Holm) · peeking / early-stopping hazards · heterogeneous treatment effects and interaction tests · statistical vs practical significance · translating lift into revenue.
 
 ## Reproduce it
 
